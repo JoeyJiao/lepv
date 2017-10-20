@@ -127,7 +127,7 @@ class IOProfiler:
                 break
 
             # find the 'M/s" or 'B/s', they are for disk read and write
-            matches = re.findall('\s*\d+\.\d{2}\s*[G|M|B]\/s\s+', line)
+            matches = re.findall('\s*\d+\.\d{2}\s*[G|M|K|B]\/s\s+', line)
             diskRead = matches[0].strip()
             diskWrite = matches[1].strip()
 
